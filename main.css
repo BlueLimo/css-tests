@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* defining the variables */
+body {
+  width: 100%;
+  background-color: #eef; }
+
+.main-header {
+  background-color: #006688;
+  width: 100%;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: flex;
+  padding-left: 10px; }
+
+.head-logo {
+  width: 20%; }
+  .head-logo h3 {
+    font-family: calibri;
+    font-weight: bolder;
+    color: #fff; }
+
+.head-menu {
+  width: 75%;
+  padding-top: 20px; }
+  .head-menu ul {
+    float: right; }
+    .head-menu ul li {
+      color: #eef;
+      list-style: none;
+      display: inline-block;
+      padding-right: 10px; }
+      .head-menu ul li a {
+        cursor: pointer; }
+
+.content-section {
+  width: 75%;
+  height: 100px;
+  padding-top: 100px;
+  padding-left: 10%;
+  margin: 10px;
+  display: -webkit-flex;
+  display: flex; }
+
+.content-left {
+  width: 23%;
+  background-color: #fff;
+  height: 300px;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .content-left .prof-pic {
+    border: 1px solid #eef;
+    margin: 2px; }
+  .content-left .prof-det {
+    border-top: 2px solid #eef;
+    margin-top: 10px; }
+    .content-left .prof-det table {
+      width: 100%;
+      font-family: calibri; }
+      .content-left .prof-det table th {
+        width: 40%;
+        font-weight: lighter;
+        color: #006688;
+        ont-family: calibri; }
+      .content-left .prof-det table td {
+        width: 50%;
+        font-weight: lighter;
+        font-family: calibri;
+        color: #006622; }
+
+.content-right {
+  width: 75%; }
+  .content-right .top-navigations {
+    width: 100%;
+    margin-bottom: 5px;
+    display: -webkit-flex;
+    display: flex; }
+    .content-right .top-navigations .top-list {
+      width: 34%;
+      margin-right: 4px;
+      box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 5px 10px 1px 20px;
+      background-color: #fff; }
+      .content-right .top-navigations .top-list p {
+        font-family: tahoma;
+        font-weight: lighter;
+        font-size: medium;
+        color: #006611; }
+  .content-right .middle-navigations {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 200px;
+    background-color: #fff;
+    margin-top: 10px; }
+    .content-right .middle-navigations .top-section {
+      border-bottom: 1px solid #eef;
+      padding: 10px 10px 0px 20px;
+      font-family: calibri;
+      font-size: 18px;
+      color: #006688; }
+
+/*# sourceMappingURL=main.css.map */

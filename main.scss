@@ -1,0 +1,157 @@
+/* defining the variables */
+$color1: #006688;
+$color2: #006633;
+$header-text-color: #fff;
+$header-text-color1: #eef;
+$backgroundcolor1: #eef;
+$backgroundcolor2: #006688;
+$fullwidth: 100%;
+
+
+@mixin flex 
+{
+    display: -webkit-flex;
+    display: flex;
+}
+
+body
+{
+	width: $fullwidth;
+	background-color: $backgroundcolor1;
+}
+.main-header
+{
+	background-color: $backgroundcolor2;
+	width: $fullwidth;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: fixed;
+	top:0;
+	left:0;
+    @include flex;
+    padding-left: 10px;
+}
+.head-logo
+{
+	width: $fullwidth*0.2;
+	h3
+	{
+		font-family: calibri;
+		font-weight: bolder;
+		color: $header-text-color;
+	}
+}
+.head-menu
+{
+	width: $fullwidth*0.75;
+	padding-top: 20px;
+	ul
+	{
+		float: right;
+
+		li
+		{
+			color: #eef;
+			list-style: none;
+			display: inline-block;
+			padding-right: 10px;
+
+			a
+			{
+				cursor: pointer;
+			}
+		}
+	}
+}
+.content-section
+{
+	width: $fullwidth*0.75;
+	height: 100px;
+	padding-top:  100px;
+	padding-left: 10%;
+	margin: 10px;
+	@include flex;
+}
+.content-left
+{
+	width: 23%;
+	background-color: #fff;
+	height: 300px;
+	margin-right: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .prof-pic
+    {
+    	border: 1px solid #eef;
+    	margin: 2px;
+    }
+    .prof-det
+    {
+    	border-top: 2px solid #eef;
+    	margin-top: 10px;
+    	
+    	table
+    	{
+    		width: 100%;
+    		font-family: calibri;
+
+    		th
+    		{
+    			width: 40%;
+    			font-weight: lighter;
+    			color: #006688;
+    			ont-family: calibri;
+    		}
+    		td
+    		{
+    			width: 50%;
+    			font-weight: lighter;
+    			font-family: calibri;
+    			color: #006622;
+    		}
+    	}
+    }
+}
+
+.content-right
+{
+	width: 75%;
+	.top-navigations
+	{
+		width: 100%;
+		margin-bottom: 5px;
+		@include flex;
+
+		.top-list
+		{
+			width: 34%;
+			margin-right: 4px;
+			box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			padding: 5px 10px 1px 20px;
+			background-color: #fff;
+
+			p
+			{
+				font-family: tahoma;
+				font-weight: lighter;
+				font-size: medium;
+				color: #006611;
+			}
+		}
+	}
+	.middle-navigations
+	{
+		width: $fullwidth;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		height: 200px;
+		background-color: #fff;	
+		margin-top: 10px;
+
+		.top-section
+		{
+			border-bottom: 1px solid #eef;
+			padding: 10px 10px 0px 20px;
+			font-family: calibri;
+			font-size: 18px;
+			color: #006688;
+		}
+	}
+}
